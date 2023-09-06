@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:ital,wght@1,900&family=Oswald:wght@200;700&family=Playfair+Display&family=Poppins:wght@100;200;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:ital,wght@1,900&family=Oswald:wght@200;700&family=Playfair+Display&family=Poppins:wght@100;200;900&display=swap");
 
 /*
 
@@ -10,7 +10,8 @@ font-family: 'Poppins', sans-serif;
 
 */
 
-body,html{
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -19,67 +20,65 @@ body,html{
 
 /* HEADER */
 
-header{
+header {
     width: 100%;
     height: 10vh;
-    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.900));
+    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.9));
     align-items: center;
     justify-content: center;
     display: flex;
-    
+
     color: white;
 
     user-select: none;
 }
 
-header nav{
+header nav {
     width: 100%;
     padding: 40px;
 }
 
-header nav ul{
+header nav ul {
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-header nav ul a{
+header nav ul a {
     text-decoration: none;
     color: white;
 }
 
 header h1 {
     font-size: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
 /* MAIN */
 
-.background-image{
+.background-image {
     position: absolute;
     width: 100%;
     z-index: -9999;
     top: 0;
 }
 
-main{
+main {
     width: 100%;
 }
 
-
 /* HERO */
 
-.hero{
-
+.hero {
     width: 100%;
     height: 90vh;
 
-    background-color: rgba(0, 0, 0, 0.900);
+    background-color: rgba(0, 0, 0, 0.9);
 
     color: white;
 
@@ -87,46 +86,45 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
-.main-hero{
+.main-hero {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.main-hero p{
+.main-hero p {
     margin-bottom: 50px;
 }
 
-.main-hero h1{
+.main-hero h1 {
     margin: 0;
     padding: 0;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 120px;
 }
 
-.dot{
+.dot {
     animation: popup 1s step-end infinite;
 }
 @keyframes popup {
-    0%{
+    0% {
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 100%;
     }
-    100%{
+    100% {
         opacity: 0;
     }
 }
 
-.change-language{
+.change-language {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     background-color: red;
     border: none;
@@ -136,29 +134,27 @@ main{
     border-radius: 30px;
     transition: 1s;
 }
-.change-language:hover{
+.change-language:hover {
     text-shadow: 0 0 10px white;
 }
 
-
-
 /* container */
 
-.container{
+.container {
     text-align: center;
     width: 100%;
     height: 100%;
     background-color: rgb(3, 3, 3);
 }
 
-.about-me{
+.about-me {
     color: white;
     width: 100%;
     height: 90vh;
     display: flex;
 }
 
-.aboute-me-article{
+.aboute-me-article {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -168,21 +164,20 @@ main{
     text-align: center;
     justify-content: center;
     border-radius: 20px;
-
 }
 
-.about-me-content{
+.about-me-content {
     width: 50%;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.about-me-content p{
+.about-me-content p {
     text-align: justify;
 }
 
-.horizontal{
+.horizontal {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -191,89 +186,100 @@ main{
     background-color: red;
 }
 
-.about-me-content h3{
+.about-me-content h3 {
     margin: 0;
     font-size: 30px;
     text-align: left;
 }
 
-.about-me-content h1{
+.about-me-content h1 {
     text-align: left;
     margin: 0;
     font-size: 70px;
 }
 
-
-
-
 /*----------------------------------------*/
-/* WORKS AND COURSES */ 
+/* WORKS AND COURSES */
 
-.works-and-courses{
+.works-and-courses {
     background-color: black;
     color: white;
     height: 90vh;
     width: 100%;
 }
 
-.works-container{
+.works-container {
     width: 100%;
     margin: 0 auto;
     height: 100%;
     display: flex;
 }
 
-.works-container article{
+.works-container article {
     margin: 0 auto;
     padding: 50px;
     width: 50%;
 }
 
-.content-about-me{
+.content-about-me {
     display: flex;
     align-items: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.content-about-me button{
+.content-about-me button {
     border: none;
     background-color: transparent;
 }
 
-.content-about-me span{
+.content-about-me span {
     color: white;
     font-size: 30px;
 }
 
-.content-about-me h1{
+.content-about-me h1 {
     font-size: 50px;
 }
 
-.article-content{
+.article-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-
-    width: 600px;
+    margin: 0 auto;
+    width: 700px;
     height: 100%;
     overflow: hidden;
-
 }
-
-.article-content-card:not(:first-of-type){
-    transform: translateX(-100%);
-    /*left: -100%;*/
-}
-.article-content-card{
+.carrossellBTN {
     position: absolute;
+    cursor: pointer;
 }
-
-
+.carrossellBTN span {
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.carrossellBTN span:hover {
+    color: red;
+    font-size: 50px;
+}
+.carrossellBTN:first-of-type {
+    left: 0;
+}
+.carrossellBTN:last-of-type {
+    right: 0;
+}
+.article-content-card {
+    position: absolute;
+    max-width: 600px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(200%);
+}
 
 /*----------------------------------------*/
 
-/* FOOTER */ 
-footer{
+/* FOOTER */
+footer {
     height: 40vh;
     color: white;
     background-color: black;
