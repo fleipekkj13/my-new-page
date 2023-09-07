@@ -232,21 +232,6 @@ main {
     background-color: rgb(3, 3, 3);
 }
 
-.about-me {
-    color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-
-    position: relative;
-    top: 0;
-
-    transition: 0.5s ease-in-out;
-
-    transform: translateY(20vh);
-
-}
-
 .inv{
     background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
     -webkit-text-fill-color: transparent;
@@ -271,7 +256,7 @@ main {
     border: none;
 
     background-size: 500% 500%;
-
+    
 
     transition: 0.2s linear;
 
@@ -301,28 +286,74 @@ main {
 }
 
 
+.about-me {
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 0;
+
+    transition: 0.5s ease-in-out;
+
+    transform: translateY(20vh);
+
+}
+
 
 .aboute-me-article {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
     text-align: center;
-    justify-content: center;
     border-radius: 20px;
 }
 
 .about-me-content {
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
+    height: 90vh;
     display: flex;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about-me-content p {
-    text-align: justify;
+.greetings{
+    text-align: right;
+    font-size: 20px;
+    color: rgb(207, 207, 207);
 }
+
+#flp-ld{
+    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    font-family: 'Josefin Sans';
+}
+
+.title-about-me{
+    font-size: 80px;
+    text-align: left;
+    width: 50%;
+
+    background-image: linear-gradient(180deg, white, grey);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
+.title-about-me h1{
+    margin: 0;
+    padding: 0;
+}
+
+.content-about-me{
+    width: 50%;
+    font-size: 30px;
+}
+
 
 .horizontal {
     margin: 0 auto;
@@ -333,17 +364,7 @@ main {
     background-color: #ff2cdf;
 }
 
-.about-me-content h3 {
-    margin: 0;
-    font-size: 30px;
-    text-align: left;
-}
 
-.about-me-content h1 {
-    text-align: left;
-    margin: 0;
-    font-size: 70px;
-}
 
 /*----------------------------------------*/
 /* WORKS AND COURSES */
@@ -394,11 +415,15 @@ main {
 
 .content-about-me span {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.article-content-card p{
+    font-size: 20px;
 }
 
 .content-about-me h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 .article-content {
     display: flex;
