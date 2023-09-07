@@ -282,10 +282,12 @@ main {
 }
 
 .article-content-card p{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .date-article p{
+    text-align: center;
     width: 100%;
     font-family: 'PT Mono', monospace;
     
@@ -338,6 +340,8 @@ main {
     right: 0;
 }
 .article-content-card {
+    height: 100%;
+    overflow: scroll;
     position: absolute;
     max-width: 600px;
     transition: transform 0.5s ease-in-out;
