@@ -26,83 +26,6 @@ html {
     background-color: black;
 }
 
-/*
-
-CHANGE LANGUAGE BUTTOM
-
-*/
-
-.container-language{
-
-
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-
-
-    color: white;
-    bottom: 2vh;
-    right: 2vw;
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.checked-button{
-    background-color: white;
-    width: 50px;
-    height: 30px;
-    border-radius: 200px;
-    cursor: pointer;
-    position: relative;
-    
-    border: solid rgb(255, 0, 0);
-
-    transition: 0.2s linear;
-}
-
-.checked-button::before{
-    position: absolute;
-    content: 'BR';
-    font-size: 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: black;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
-
-    background-color: rgb(255, 255, 255);
-    width: 25px;
-    height: 25px;
-    border-radius: 200px;
-    margin: 2px;
-    transition: 0.2s linear;
-
-}
-
-input:checked + .checked-button{
-    background-color: red;
-    border: solid rgb(255, 255, 255);
-}
-input:checked + .checked-button::before{
-    color: rgb(255, 0, 0);
-    transform: translateX(20px);
-    content: 'EN';
-}
-
-
-
-
-
-input{
-    display: none;
-}
-
 /* HEADER */
 
 header {
@@ -134,7 +57,7 @@ header nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
 }
 
@@ -155,9 +78,12 @@ header h1 {
 .console-container{
     background-color: rgb(34, 34, 34);
     border-radius: 20px;
-    width: 80%;
+    width: 40%;
     margin: 30px auto;
     padding: 10px;
+
+    box-shadow: -5px 5px 0 color-mix(in srgb, #0014ff 100%, #ff2cdf 100%);
+
 }
 
 .console p{
@@ -193,7 +119,7 @@ main {
 }
 
 .main-hero {
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     font-family: 'PT Mono', monospace;
@@ -205,21 +131,6 @@ main {
 
     font-family: "Poppins", sans-serif;
     font-size: 80px;
-}
-
-.dot {
-    animation: popup 1s step-end infinite;
-}
-@keyframes popup {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 
@@ -236,53 +147,6 @@ main {
     background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
-
-.show-more{
-    padding: 5px;
-    font-size: 20px;
-    width: 50%;
-    border-radius: 20px;
-
-    background-image: linear-gradient(750deg, #ff2cdf 0%, #0800ff ,  #009dff, rgb(255, 0, 251));
-    
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-
-    color: white;
-    
-    cursor: pointer;
-
-    border: none;
-
-    background-size: 500% 500%;
-    
-
-    transition: 0.2s linear;
-
-}
-
-.show-more:hover{
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 2s ease infinite;
-    animation: AnimationName 5s ease infinite;
-
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
 }
 
 
@@ -319,6 +183,7 @@ main {
 }
 
 .greetings{
+    width: 80%;
     text-align: right;
     font-size: 20px;
     color: rgb(207, 207, 207);
@@ -341,6 +206,8 @@ main {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
+    font-weight: bolder;
+    
 }
 
 
@@ -348,6 +215,7 @@ main {
     margin: 0;
     padding: 0;
 }
+
 
 .content-about-me{
     width: 50%;
@@ -369,11 +237,6 @@ main {
 /*----------------------------------------*/
 /* WORKS AND COURSES */
 
-.and-dif{
-    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
 
 .works-and-courses {
     background-color: black;
@@ -422,10 +285,32 @@ main {
     font-size: 20px;
 }
 
+.date-article p{
+    width: 100%;
+    font-family: 'PT Mono', monospace;
+    
+}
+
+.date-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-article hr{
+    width: 100%;
+    height: 0;
+}
+
+
 .content-about-me h1 {
     font-size: 40px;
 }
 .article-content {
+
+    transition: 0.5s ease-in-out;
+
+    transform: translateY(20vh);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,11 +325,11 @@ main {
     cursor: pointer;
 }
 .carrossellBTN span {
-    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .carrossellBTN span:hover {
-    color: red;
-    font-size: 50px;
+    color: rgb(247, 0, 255);
+    font-size: 30px;
 }
 .carrossellBTN:first-of-type {
     left: 0;
@@ -460,55 +345,6 @@ main {
 }
 
 /*----------------------------------------*/
-
-/* CODEFORM */
-
-.codeform-section{
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.code-form-container{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.code-form-container h1{
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.hand-title{
-    font-family: 'Comfortaa', cursive;
-    font-size: 100px;
-}
-
-.aboute-codeform{
-    width: 50%;
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.codeform-projects{
-    width: 50%;
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    transform: translateX(100%);
-}
-
-
-
-
-/* -------------------- */
-
-
-
 
 /* FOOTER */
 footer {

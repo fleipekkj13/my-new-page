@@ -1,0 +1,65 @@
+/* dot */
+
+
+.dot {
+    animation: popup 1s step-end infinite;
+}
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* SHOW-MROE -- BUTTOM */
+
+.show-more{
+    padding: 5px;
+    font-size: 20px;
+    width: 20%;
+    border-radius: 20px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    
+    cursor: pointer;    
+    border: none;
+    
+    background-size: 500% 500%;
+    background-image: linear-gradient(750deg, #ff2cdf 0%, #0800ff ,  #009dff, rgb(255, 0, 251));
+    
+
+    transition: 0.2s linear;
+
+}
+
+.show-more:hover{
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 5s ease infinite;
+    scale: 1.02;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
