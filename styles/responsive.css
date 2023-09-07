@@ -1,0 +1,120 @@
+@media only screen and (max-width: 600px) {
+    header{
+        display: none;
+    }
+
+    /* HERO */
+
+    .main-hero{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .main-hero{
+        height: 10vh;
+    }
+
+    .main-hero h1{
+        text-shadow: none;
+        font-size: 35px;
+    }
+
+    .console-container{
+        max-width: 600px;
+        width: 70%;
+        padding: 5px;
+        font-size: 9px;
+        box-shadow: -2px 2px 0 rgb(255, 0, 255);
+    }
+
+    #main-hero-print{
+        text-shadow: none;
+    }
+
+    .show-more{
+        max-width: 600px;
+        width: 50%;
+    }
+
+    /* CONTAINER */
+
+    .container{
+        max-width: 600px;
+        width: 100%;
+    }
+
+
+
+    .about-me-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    .title-about-me{
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .greetings{
+        margin: 0 auto;
+        margin-top: 30px ;
+        text-align: justify;
+    }
+
+    /* WORKS AND COURSES */
+
+    .works-and-courses {
+        max-width: 600px;
+        width: 100%;
+    }
+    .works-and-courses article {
+        width: 90%;
+    }
+
+    .works-container article{
+        padding: 0;
+    }
+
+    .article-content button{
+        position: absolute;
+        top: 0;
+    }
+
+    .social-media{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .social-media-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media-card{
+        width: 60%;
+    }
+
+    .languagens-i-know{
+        max-width: 600px;
+        width: 100%;
+    }
+
+
+    .i-know-container{
+        width: 80%;
+    }
+
+    .i-know-card {
+        width: 100%;
+    }
+
+    .i-know-card h1{
+        font-size: 25px;
+        width: 100%;
+    }
+
+}
+

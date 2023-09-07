@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/animation.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/responsive.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <title>Felipe Liandro | Home</title>
     </head>
@@ -13,8 +15,13 @@
 
         <header id="header">
             <nav>
-            <ul>
                 <h1>Felipe Liandro</h1>
+                <ul class="header-list">
+                    <button href="#" id="home">Início</button>
+                    <button id="about-me-header" href="#">Sobre Mim</button>
+                    <button href="#" id="projects">Projetos</button>
+                    <button href="#" id="social-media">Social</button>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -25,10 +32,10 @@
 
         <section class="hero">
             <div class="main-hero">
-                <h1>print("Welcome")<a class="dot" href="#" style="color:#dd14ff; text-decoration: none;">;</a></h1>
+                <h1><a id="main-hero-print">print</a>("Welcome")<a class="dot" href="#" style="color:#dd14ff; text-decoration: none;">;</a></h1>
                 <div class="console-container">
                     <div class="console">
-                        <p><a style="color: green;">felipe@felipe-pc:</a><a style="color: red">~$</a> Designer | Coder | E muito mais!</p>
+                        <p style="color: rgb(180, 180, 180);"><a style="color: green;">felipe@felipe-pc:</a><a style="color: red">~$</a> Designer | Coder | E muito mais!</p>
                     </div>
                 </div>
                 <button id="show-more" onclick="myFunc()" class="show-more">Conhecer Mais!</button>
@@ -42,8 +49,8 @@
                     
                     <div class="about-me-content">
                         <div class="title-about-me">
-                            <h1>Coder |</h1>
-                            <h1>Músico</h1>
+                            <h1>About</h1>
+                            <h1>Me</h1>
                         </div>
                         <div class="greetings">
 
@@ -81,7 +88,7 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Movido pela fome de conhecimento, entrei na faculdade <strong>UNIVESP</strong> justamente para poder aumentar meus conhecimentos tanto na parte de hardware ou software, mas também em outras áreas da tecnologia. <br><br> Visto que hoje em dia a UNIVESP é considerada uma das melhores faculdades do Brasil, mesmo sendo EAD.
+                                    Movido pela fome de conhecimento, entrei na faculdade <strong>UNIVESP</strong> justamente para poder aumentar meus conhecimentos tanto na parte de <a id="flp-ld">hardware</a> ou <a id="flp-ld">software</a>, mas também em outras áreas da tecnologia. <br><br> Visto que hoje em dia a UNIVESP é considerada uma das melhores faculdades do Brasil, mesmo sendo EAD.
                                 </p>
                             </div>
                             
@@ -93,7 +100,7 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Ansioso com as vastas possibilidades que a adolescência traz, me desafiei a conseguir entrar na Etec e é obvio que eu consegui! 😎 <br><br> Sendo uma escola de total importância para minha formação, foi atravéz dela que realmente conheci o poder que a programação, por exemplo, possui. <br><br> Dentro dos meus 3 anos de ensino, realizei alguns trabalhos escolares no qual ao invés de fazer no papel, resolvi construir sites para fazer minhas apresentações. <br><br> <a style="font-size: 15px;font-style: italic; color: rgb(99, 99, 99);">(mas como demorava, muitas vezes não conseguia realmente apresentá-los!😭)</a>
+                                    Ansioso com as vastas possibilidades que a adolescência traz, me desafiei a conseguir entrar na <a id="flp-ld">ETEC</a> e é obvio que eu consegui! 😎 <br><br> Sendo uma escola de total importância para minha formação, foi atravéz dela que realmente conheci o poder que a <a id="flp-ld">programação</a>, por exemplo, possui. <br><br> Dentro dos meus 3 anos de ensino, realizei alguns trabalhos escolares no qual ao invés de fazer no papel, resolvi construir sites para fazer minhas apresentações. <br><br> <a style="font-size: 15px;font-style: italic; color: rgb(99, 99, 99);">(mas como demorava, muitas vezes não conseguia realmente apresentá-los!😭)</a>
                                 </p>
                             </div>
 
@@ -105,7 +112,7 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Depois de ter aprendido <strong>Python</strong>, com alguns cursos gratuitos na internet e uma pilha de sites de documentação. Resolvi me desafiar novamente e ir atraz de mais linguagens que são realmente poderosas. <br><br> E por isso hoje estou concluindo um curso de <a style="color: greenyellow;">C#</a> dentro da plataforma <strong><a style="color: rgb(255, 0, 212);">U</a>DEMY</strong>. Aprendendo a construir apps, utilizar C# junto com banco de dados como <strong>SQL</strong>, e também na utilização de Frameworks como <strong>.NET</strong>;
+                                    Depois de ter aprendido <strong><a id="flp-ld">Python</a></strong>, com alguns cursos gratuitos na internet e uma pilha de sites de documentação. Resolvi me desafiar novamente e ir atraz de mais linguagens que são realmente poderosas. <br><br> E por isso hoje estou concluindo um curso de <a style="color: greenyellow;">C#</a> dentro da plataforma <strong><a style="color: rgb(255, 0, 212);">U</a>DEMY</strong>. Aprendendo a construir apps, utilizar C# junto com banco de dados como <strong>SQL</strong>, e também na utilização de Frameworks como <strong>.NET</strong>;
                                 </p>
                             </div>
 
@@ -117,7 +124,7 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Embora não esteja utilizando muito o Python, sem dúvidas ele foi um dos gatilhos para me trazer para o mundo da tecnologia. <br><br> Se 👂ouve muito falar que ao iniciar na programação, é melhor você começar pelo <a style="font-style: italic; font-weight: bold;">front-end</a>, já que você consegue analisar os resultados muito mais fácil. <br><br> Porém pra mim foi ao contrário. Ao começar no <strong>Python</strong>, cada resultado ou erro que eu via dentro de um terminal ou log, me fazia sentir cada vez mais fome por conhecimento e aprendizado. Pronto para virar noites e dias apenas programando. <br><br><a style="font-size: 15px; color: rgb(99, 99, 99);">Eu realmente estava começando a minha <a style="font-style: italic;font-weight: bold; color: rgb(99, 99, 99); font-size: 12px;">jornada!</a> 🐍</a>
+                                    Embora não esteja utilizando muito o Python, sem dúvidas ele foi um dos gatilhos para me trazer para o mundo da tecnologia. <br><br> Se 👂ouve muito falar que ao iniciar na programação, é melhor você começar pelo <a id="flp-ld">front-end</a>, já que você consegue analisar os resultados muito mais fácil. <br><br> Porém pra mim foi ao contrário. Ao começar no <strong>Python</strong>, cada resultado ou erro que eu via dentro de um terminal ou log, me fazia sentir cada vez mais fome por conhecimento e aprendizado. Pronto para virar noites e dias apenas programando. <br><br><a style="font-size: 15px; color: rgb(99, 99, 99);">Eu realmente estava começando a minha <a style="font-style: italic;font-weight: bold; color: rgb(99, 99, 99); font-size: 12px;">jornada!</a> 🐍</a>
                                 </p>
                             </div>
 
@@ -129,7 +136,7 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Conhecendo pessoas extraordinárias dentro da Etec, eu resolvi criar a CodeForm. Uma equipe com pessoas que buscam o mesmo do que eu: Inovação e Mudança. <br><br> Estamos estudando cada vez mais para conseguir trazer os nossos projetos que hoje em dia estão apenas em Noteblocks ou em um papel, para o mundo 2D e binário da técnologia. <br><br>Infelizmente algumas pessoas seguiram caminhos diferentes, mas eu só tenho a agradecer a elas. Pois fizeram parte do início de um sonho meu.
+                                    Conhecendo pessoas extraordinárias dentro da Etec, eu resolvi criar a <a id="flp-ld">CodeForm</a>. Uma equipe com pessoas que buscam o mesmo do que eu: 🤖<a id="flp-ld">Inovação & Mudança</a>🌐. <br><br> Estamos estudando cada vez mais para conseguir trazer os nossos projetos que hoje em dia estão apenas em <strong>Noteblocks ou em um papel</strong>, para o mundo 2D e binário da técnologia. <br><br>Infelizmente algumas pessoas seguiram caminhos diferentes, mas eu só tenho a agradecer a elas. Pois fizeram parte do início de um sonho meu.
                                 </p>
                             </div>
 
@@ -141,9 +148,9 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    Hoje em dia estou trabalhando em um BOT de Discord chamado "Friday", ao qual planejo utilizá-lo para ser diferente de outros BOT's que já existem dentro da plataforma.
+                                    Hoje em dia estou trabalhando em um 🤖BOT de Discord chamado <a id="flp-ld">"Friday"</a>, ao qual planejo utilizá-lo para ser diferente de outros BOT's que já existem dentro da plataforma.
                                     <br><br>
-                                    Friday tera features únicas e poderá ser utilizada para diversas funcionalidades dentro do Discord. Não apenas conseguindo reproduzir músicas, mas também por exemplo: conseguindo conversar com os usuários, utilizando uma Inteligência Artificial.
+                                    Friday tera features únicas e poderá ser utilizada para diversas funcionalidades dentro do Discord. Não apenas conseguindo reproduzir <strong>músicas</strong>, mas também por exemplo: conseguindo conversar com os usuários, utilizando uma Inteligência Artificial.
                                     <br><br>
                                     <a style="font-size: 12px; color: rgb(99, 99, 99);">O projeto da Friday ainda está em versão Alpha, e estou testando algumas coisas nela. Gostaria muito de deixar o link para que você possa adicioná-la em seu server, mas ainda não estou pronto para isso!</a>
 
@@ -158,13 +165,105 @@
                                     <hr>
                                 </div>
                                 <p>
-                                    O Projeto "Friday-BOT" começou depois que eu conseguir desenvolver uma pequena assistente virtual dentro do Python. Eu tinha acabado de começar a programar mas estava animado com a possibilidade de ser o Tony Stark. <br><br> Com isso eu queria criar um J.A.R.V.I.S (assistente virtual do Tony Stark), então comecei sozinho indo atrás de bibliotecas que poderiam escutar minha voz, reproduzir sons e muito mais. <br><br> Depois de muitos "Traceback (most recent call last), SyntaxError: Invalid Syntax, RuntimeError: unable to alguma coisa" eu finalmente comecei a dar vida a ela. <br><br> Friday no início fazia apenas tarefas básicas como, conversar comigo atrávez de um pequeno banco de dados com frases pre-escolhidas, abrir programas e arquivos, fazer pesquisas e me trazer as respostas em alguns casos mostrando até imagens, me dizer a hora e o clima, reproduzir músicas e muito mais. <br><br> Depois de um tempo, eu comecei a implementar algumas bibliotecas de Machine Learning nela e agora a Friday escolhia frases que estavão relacionadas com o que eu disse, me dava dicas ou conselhos baseados em alguns dados e etc... 
+                                    O Projeto "Friday-BOT" começou depois que eu conseguir desenvolver uma pequena assistente virtual dentro do Python. Eu tinha acabado de começar a programar mas estava animado com a possibilidade de ser o Tony Stark.😎 <br><br> Com isso eu queria criar um <a id="flp-ld">J.A.R.V.I.S</a> <strong>(assistente virtual do Tony Stark)</strong>, então comecei sozinho indo atrás de bibliotecas que poderiam escutar minha voz, reproduzir sons e muito mais. <br><br> Depois de muitos <a style="color: red;">"Traceback (most recent call last), SyntaxError: Invalid Syntax, RuntimeError: unable to alguma coisa"</a> eu finalmente comecei a dar vida a ELA!👩‍🦰 <br><br> Friday no início fazia apenas tarefas básicas como, conversar comigo atrávez de um pequeno banco de dados com frases pre-escolhidas, abrir programas e arquivos, fazer pesquisas e me trazer as respostas em alguns casos mostrando até imagens, me dizer a hora e o clima, reproduzir músicas e muito mais. <br><br> Depois de um tempo, eu comecei a implementar algumas bibliotecas de Machine Learning nela e agora a Friday escolhia frases que estavam relacionadas com o que eu disse, me dava dicas ou conselhos baseados em alguns dados e etc... 
                                 </p>
                             </div>
+
+                            <div class="article-content-card">
+                                <h1>E muito mais!</h1>
+                                <div class="date-article">
+                                    <hr>
+                                </div>
+                                <p style="font-size: 15px;">
+                                    Além desses projetos eu também já me aventurei em diversas outras áreas que me ajudaram a hoje em dia ter uma grande base de conhecimento sobre diversos assuntos. <br><br> <a style="font-weight: bold;">Como Por Exemplo: </a> <br><br> </p>  <p style="font-size: 20px;color: white;">Design, Mecânica, Física, Edição De Vídeos, Música, Negócios, Machine Learning, Marketing Digital, Vendas...
+                                </p>
+                            </div>
+
 
                             <button class="carrossellBTN"><span class="material-symbols-outlined"> arrow_forward_ios </span></button>
                         </div>
                     </article>
+                </div>
+            </section>
+            <section class="social-media">
+                <h1 style="font-size: 50px;padding: 0;margin: 30px;">Saiba aonde me encontrar!</h1>
+                <div class="social-media-container">
+
+
+                    <article class="social-media-card">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="github">
+                        <div class="media-content">
+                            <h1>GitHub</h1>
+                            <p>Que tal dar uma olhadinha mais de perto em alguns projetos que eu já fiz?</p>
+                            <button><a target="_blank" href="https://github.com/fleipekkj13">Acessar</a></button>
+
+                        </div>
+                    </article>
+
+                    <article class="social-media-card">
+                        <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="github">
+                        <div class="media-content">
+                            <h1>Instagram</h1>
+                            <p>A rede social na qual você pode conferir fotos, coisas aleatórias que eu posto mas também alguns projetos.</p>
+                            <button><a target="_blank" href="#">Acessar</a></button>
+
+                        </div>
+                    </article>
+
+                    <article class="social-media-card">
+                        <img style="width: 80px;" src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-7-1.png" alt="github">
+                        <div class="media-content">
+                            <h1>Discord</h1>
+                            <p>O lugar que eu passo o maior tempo do meu dia, lá eu fico horas e horas conversando sobre coisas nada haver mas também trabalho junto cm minha equipe.</p>
+                            <button style="color: white;">Me add lá: fleipekkj</button>
+
+                        </div>
+                    </article>
+
+                    <article class="social-media-card">
+                        <img style="width: 80px;" src="https://i.pinimg.com/originals/13/07/a2/1307a2648e71d531704a0f5a270ea966.png" alt="github">
+                        <div class="media-content">
+                            <h1>Linkedin</h1>
+                            <p>A rede social que você utiliza para descobrir quais projetos já fiz, aonde trabalhei, dados de contato e mais algumas coisinhas ae!</p>
+                            <button><a href="https://www.linkedin.com/in/felipe-de-jesus-alves-liandro-415890222/?originalSubdomain=br" target="_blank">Acessar</a></button>
+
+                        </div>
+                    </article>
+                </div>
+                <p style="padding: 20px;color: gray;" id="media-p">Se eu não responder na hora ( o que provavelmente vai acontecer ) é porque estou planejando algo! <br><br> Ou apenas não vi a mensagem💘💋</p>
+            </section>
+            <section class="languagens-i-know">
+                <div class="i-know-container">
+                    <article class="i-know-card">
+                        <h1>Python</h1>
+                        <p>2 Anos de Conhecimento e Prática</p>
+                    </article>
+
+                    <article class="i-know-card">
+                        <h1>C#</h1>
+                        <p>3 Meses de Conhecimento e Prática</p>
+                    </article>
+
+                    <article class="i-know-card">
+                        <h1>SQL</h1>
+                        <p>3 Meses de Conhecimento e Prática</p>
+                    </article>
+
+                    <article class="i-know-card">
+                        <h1>HTML5</h1>
+                        <p>1,5 Anos de Conhecimento e Prática</p>
+                    </article>
+
+                    <article class="i-know-card">
+                        <h1>CSS3</h1>
+                        <p>1,5 Anos de Conhecimento e Prática</p>
+                    </article>
+
+                    <article class="i-know-card">
+                        <h1>JavaScript</h1>
+                        <p> Alguns meses de Conhecimento e Prática</p>
+                    </article>
+
                 </div>
             </section>
         </div>
@@ -174,7 +273,7 @@
 
 
     <footer>
-        <h1>Felipe Liandro</h1>
+        
     </footer>
 
 

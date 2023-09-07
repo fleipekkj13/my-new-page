@@ -1,6 +1,7 @@
 const about_me = document.getElementById("about-me");
 const articleContent = document.getElementById("article");
 
+
 document.addEventListener("scroll", () =>{
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     console.log('Posição atual do scroll:', scrollTop);

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:ital,wght@1,900&family=Oswald:wght@200;700&family=Playfair+Display&family=Poppins:wght@100;200;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@900&family=Caveat:wght@400;700&family=Jost:ital,wght@1,900&family=Oswald:wght@200;700&family=Playfair+Display&family=Poppins:wght@100;200;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Josefin+Sans:wght@200;400;700&family=PT+Mono&family=Poltawski+Nowy:ital,wght@0,400;1,700&display=swap');
 
@@ -9,11 +9,12 @@ font-family: 'Jost', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
-
-font-family: 'Comfortaa', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Poltawski Nowy', serif;
-font-family: 'PT Mono', monospace;
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
 */
 
 body,
@@ -31,12 +32,11 @@ html {
 header {
     width: 100%;
     height: 10vh;
-    background-image: linear-gradient(180deg, black 30%, rgba(250,250,250, 0));
+
+    background-color: rgba(0, 0, 0, 0.3);
 
     backdrop-filter: blur(5px);
 
-    align-items: center;
-    justify-content: center;
     display: flex;
 
     z-index: 9999;
@@ -49,27 +49,40 @@ header {
 header nav {
     width: 100%;
     padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    gap: 25px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
 }
 
-header nav ul a {
+
+header nav ul button {
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    border-bottom: solid transparent ;
 }
 
 header h1 {
     font-size: 35px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     margin: 0;
+}
+
+.header-list button:nth-child(odd):hover{
+    border-bottom: solid #0014ff  ;
+}
+.header-list button:nth-child(even):hover{
+    border-bottom: solid #ff2cdf  ;
 }
 
 /* MAIN */
@@ -84,6 +97,13 @@ header h1 {
 
     box-shadow: -5px 5px 0 color-mix(in srgb, #0014ff 100%, #ff2cdf 100%);
 
+}
+
+#main-hero-print{
+    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 5px -5px 0 white;
 }
 
 .console p{
@@ -195,6 +215,7 @@ main {
     -webkit-background-clip: text;
     font-weight: bolder;
     font-family: 'Josefin Sans';
+    font-size: 20px;
 }
 
 .title-about-me{
@@ -283,6 +304,8 @@ main {
 
 .article-content-card p{
     font-size: 18px;
+    color: rgb(206, 206, 206);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
 }
 
@@ -349,6 +372,153 @@ main {
 }
 
 /*----------------------------------------*/
+
+/* SOCIAL MEDIA -- */
+
+.social-media{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 50px;
+    font-family: 'Josefin Sans';
+}
+
+.social-media-container{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-media{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.social-media-card{
+    border-radius: 30px 0 30px 0;
+
+    background-image: linear-gradient(180deg, rgb(239, 239, 239) 50%, rgb(174, 174, 174)100%);
+
+    width: 25%;
+    height: 350px;
+
+    font-size: 12px;
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+    color:black;
+
+    padding: 10px;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+#media-p{
+    margin: 50px;
+}
+
+.social-media-card:hover{
+    scale: 1.05;
+}
+
+.social-media-card a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.media-content{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media-content button{
+    margin: 0 auto;
+
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color: black;
+
+}
+
+.media-content button a{
+    font-weight: bolder;
+    color:white;
+}
+
+.social-media-card img{
+    width: 150px;
+}
+
+/*----------------------------------------*/
+
+/* I - KNOW - CARDS -- */
+
+.languagens-i-know{
+    width: 100%;
+
+    padding: 30px 0 30px 0;    
+
+}
+
+
+.i-know-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    gap: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.i-know-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    width: 50%;
+    margin: 0 auto;    
+    box-shadow: -5px 5px white;
+
+    border-radius: 20px 0 20px 0;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+.i-know-card:hover{
+    scale: 1.05;
+    box-shadow: -5px 5px #ff2cdf;
+}
+
+.i-know-card h1{
+    font-size: 30px;
+}
+.i-know-card p{
+    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Jost';
+    font-size: 20px;
+}
+
 
 /* FOOTER */
 footer {
