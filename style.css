@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:ital,wght@1,900&family=Oswald:wght@200;700&family=Playfair+Display&family=Poppins:wght@100;200;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Josefin+Sans:wght@200;400;700&family=PT+Mono&family=Poltawski+Nowy:ital,wght@0,400;1,700&display=swap');
+
 /*
 
 font-family: 'Caveat', cursive;
@@ -8,6 +10,10 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 
+font-family: 'Comfortaa', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poltawski Nowy', serif;
+font-family: 'PT Mono', monospace;
 */
 
 body,
@@ -16,6 +22,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 /*
@@ -100,10 +107,15 @@ input{
 header {
     width: 100%;
     height: 10vh;
-    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(180deg, black 30%, rgba(250,250,250, 0));
+
+    backdrop-filter: blur(5px);
+
     align-items: center;
     justify-content: center;
     display: flex;
+
+    z-index: 9999;
 
     color: white;
 
@@ -138,15 +150,30 @@ header h1 {
 
 /* MAIN */
 
-.background-image {
-    position: absolute;
-    width: 100%;
-    z-index: -9999;
-    top: 0;
+
+.console-container{
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
 }
+
+.console p{
+    margin: 0;
+}
+
 
 main {
     width: 100%;
+    
+}
+
+.back-imag img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* HERO */
@@ -155,9 +182,8 @@ main {
     width: 100%;
     height: 90vh;
 
-    background-color: rgba(0, 0, 0, 0.9);
-
     color: white;
+    background-color: black;
 
     display: flex;
     flex-direction: column;
@@ -169,11 +195,7 @@ main {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    font-family: "Poppins", sans-serif;
-}
-
-.main-hero p {
-    margin-bottom: 50px;
+    font-family: 'PT Mono', monospace;
 }
 
 .main-hero h1 {
@@ -181,7 +203,7 @@ main {
     padding: 0;
 
     font-family: "Poppins", sans-serif;
-    font-size: 120px;
+    font-size: 80px;
 }
 
 .dot {
@@ -199,21 +221,6 @@ main {
     }
 }
 
-.change-language {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    background-color: red;
-    border: none;
-    padding: 10px;
-    width: 50%;
-    font-size: 20px;
-    border-radius: 30px;
-    transition: 1s;
-}
-.change-language:hover {
-    text-shadow: 0 0 10px white;
-}
 
 /* container */
 
@@ -229,7 +236,20 @@ main {
     width: 100%;
     height: 90vh;
     display: flex;
+
+    position: relative;
+    top: 0;
+
+    transition: 0.5s ease-in-out;
+
+    transform: translateY(20vh);
+
 }
+
+
+
+
+
 
 .aboute-me-article {
     width: 80%;
@@ -260,7 +280,7 @@ main {
     margin-bottom: 20px;
     width: 100%;
     height: 2px;
-    background-color: red;
+    background-color: #ff2cdf;
 }
 
 .about-me-content h3 {
@@ -278,11 +298,23 @@ main {
 /*----------------------------------------*/
 /* WORKS AND COURSES */
 
+.and-dif{
+    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .works-and-courses {
     background-color: black;
     color: white;
     height: 90vh;
     width: 100%;
+}
+
+.works-and-courses h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 0;
 }
 
 .works-container {
@@ -353,6 +385,38 @@ main {
 }
 
 /*----------------------------------------*/
+
+/* CODEFORM */
+
+.codeform-section{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.code-form-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hand-title{
+    font-family: 'Comfortaa', cursive;
+    font-size: 100px;
+}
+
+.aboute-codeform{
+    width: 100%;
+    text-align: left;
+}
+
+.codeform-projects{
+    width: 100%;
+    text-align: right;
+}
 
 /* FOOTER */
 footer {

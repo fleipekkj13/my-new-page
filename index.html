@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Felipe Liandro | Home</title>
-</head>
-<body>
-    <header>
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <title>Felipe Liandro | Home</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav>
             <ul>
                 <a href="#">Social</a>
                 <h1>Felipe Liandro</h1>
@@ -19,28 +19,32 @@
     </header>
     <div class="container-language">
         <p class="text-language">Linguagem: </p>
-        <input type="checkbox" id="check">
+        <input checked="" type="checkbox" id="check">
         <label for="check" class="checked-button"></label>
     </div>
     <main>
-        <img class="background-image" src="Images/mountains.jpg" alt="">
         <section class="hero">
             <div class="main-hero">
-                <h1>Welcome<a class="dot" href="#" style="color:red; text-decoration: none;">.</a></h1>
-                <p>Designer | Coder | E muito mais!</p>
-                <button class="change-language">Conhecer Mais!</button>
+                <h1>print("Welcome")<a class="dot" href="#" style="color:#dd14ff; text-decoration: none;">;</a></h1>
+
+                <div class="console-container">
+                    <div class="console">
+                        <p><a style="color: green;">felipe@felipe-pc:</a><a style="color: red">~$</a> Designer | Coder | E muito mais!</p>
+                    </div>
+                </div>
+                <button id="show-more" onclick="myFunc()" class="show-more">Conhecer Mais!</button>
             </div>
         </section>
         <div class="container">
-            <section class="about-me">
+            <section id="about-me" class="about-me">
                 <article class="aboute-me-article">
                     <!-- Img with me-->
                     <div class="about-me-content">
                         <h3>I'm...</h3>
                         <h1>Felipe Liandro.</h1>
-
+                        
                         <span class="horizontal"></span>
-
+                        
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, ratione quam! Recusandae animi in earum doloribus reiciendis? Omnis rem deleniti adipisci consequuntur eligendi. Odio, unde doloribus sunt possimus quod optio corporis repudiandae vero commodi hic ut dignissimos adipisci expedita voluptate?</p>
                         <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, ratione quam! Recusandae animi in earum doloribus reiciendis? Omnis rem deleniti adipisci consequuntur eligendi. Odio, unde doloribus sunt possimus quod optio corporis repudiandae vero commodi hic ut dignissimos adipisci expedita voluptate?
@@ -49,6 +53,7 @@
                 </article>
             </section>
             <section class="works-and-courses">
+                <h1>Projetos <span class="and-dif">&</span> Cursos:</h1>
                 <div class="works-container">
                     <article class="content-about-me">
                         <div class="article-content">
@@ -75,8 +80,24 @@
                     </article>
                 </div>
             </section>
-            <section>
-                <h1 style="color:white;">galera da CODEFORM</h1>
+            <section class="codeform-section">
+                <h1 class="hand-title">CodeForm</h1>
+                <div class="code-form-container">
+                    <article class="aboute-codeform">
+                        <h1>O que é "CodeForm"?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ad ab aperiam. Quia laudantium veritatis vero facere, dolore beatae. Labore quos consequuntur, corrupti minus aperiam doloribus qui, nihil optio fugit totam quaerat corporis similique. Eligendi reiciendis aliquam quam, aliquid consectetur recusandae labore harum vero id doloribus adipisci veniam voluptas amet perferendis in quaerat voluptate deserunt! Praesentium aperiam nam suscipit magnam. Impedit dolorem explicabo iusto voluptatem laudantium? Labore tempore pariatur facere quia sapiente molestias libero neque id deleniti nemo iusto nisi minus, maiores delectus, laboriosam esse hic culpa aliquid quasi, vel velit possimus quo debitis? Deleniti laborum nostrum consequatur voluptate quas.</p>
+                    </article>
+                    <article class="codeform-projects">
+                        <h1>Projetos da CodeForm</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi illo nulla tempore earum similique corrupti odit recusandae quisquam! Nam corporis minima voluptatibus dolorem pariatur aspernatur sint. Vero possimus adipisci aspernatur sed cupiditate explicabo voluptatem fuga perspiciatis labore totam maiores accusamus nobis suscipit, veritatis ipsa! Quidem ex asperiores explicabo nisi error! Iste velit eaque sed pariatur, tempore sapiente quis molestiae quam accusamus itaque amet excepturi praesentium quisquam illum in facilis doloremque aut! Ex ea itaque officia delectus dolorem. Ipsam voluptates, pariatur autem sit ad porro unde quibusdam molestias praesentium at nulla eos consectetur quas accusantium amet rem distinctio aliquid nemo harum doloremque suscipit perspiciatis deleniti laboriosam? Eveniet deleniti rem sed quisquam pariatur aliquid soluta exercitationem nisi illo atque nulla fuga similique amet, provident deserunt repudiandae voluptate? Impedit veniam laboriosam quasi tempore quas unde dolorum magnam sequi perferendis fugiat laborum optio illum, ipsam nulla iusto id neque voluptates hic facilis amet, qui dicta culpa doloremque quod! Enim qui dolores recusandae voluptas debitis? Modi quidem officiis soluta similique veritatis doloremque ad nam. Ducimus asperiores debitis, reprehenderit beatae maxime reiciendis, assumenda provident explicabo ipsum id corporis totam vero aliquid voluptas eum saepe odit esse fuga itaque accusamus sequi magnam magni est. Aspernatur, non?</p>
+                    </article>
+                    <article class="codeform-member">
+                        <h1>Membros da CodeForm</h1>
+                        <div class="member-card">
+
+                        </div>
+                    </article>
+                </div>
             </section>
 
         </div>
@@ -84,13 +105,16 @@
     <footer>
         <h1>Felipe Liandro</h1>
     </footer>
+    <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/carrossel.js"></script>
+    <script type="text/javascript" src="js/show-more-button.js"></script>
+    <script type="text/javascript" src="js/show-content.js"></script>
 </body>
 </html>
 
 <!-- 
 
-                    <article class="faculdade">
+    <article class="faculdade">
                         <h1>UNIVESP | Eng. Computcao</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus libero natus voluptas ducimus maxime. Incidunt rerum nulla assumenda vel nisi nesciunt, quam tenetur quidem dicta rem corporis quis magni. Nemo hic repellendus iste vitae atque nam corporis tenetur tempora autem, aut dolores, labore quia adipisci molestias culpa harum, vero incidunt?</p>
                     </article>
