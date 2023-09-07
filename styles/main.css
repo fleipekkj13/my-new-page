@@ -286,6 +286,7 @@ main {
 }
 
 .content-about-me {
+    height: 100%;
     display: flex;
     align-items: center;
     color: white;
@@ -343,11 +344,11 @@ main {
     margin: 0 auto;
     width: 700px;
     height: 100%;
+
+    overflow: hidden;
+
 }
 
-.article-content::-webkit-scrollbar{
-    display: none;
-}
 
 .carrossellBTN {
     position: absolute;
