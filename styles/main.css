@@ -343,8 +343,12 @@ main {
     margin: 0 auto;
     width: 700px;
     height: 100%;
-    overflow: hidden;
 }
+
+.article-content::-webkit-scrollbar{
+    display: none;
+}
+
 .carrossellBTN {
     position: absolute;
     cursor: pointer;
