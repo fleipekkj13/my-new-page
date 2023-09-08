@@ -48,7 +48,7 @@
     .about-me-content{
         display: flex;
         flex-direction: column;
-        margin-bottom: 120px;
+        margin-bottom: 200px;
     }
 
     .title-about-me{
@@ -79,7 +79,12 @@
 
     .article-content button{
         position: absolute;
+        z-index: 9;
         top: 0;
+    }
+
+    .article-content h1{
+        font-size: 30px;
     }
 
     .social-media{
