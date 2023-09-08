@@ -121,5 +121,20 @@
         width: 100%;
     }
 
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer p{
+        font-size: 12px;
+        text-align: justify;
+        width: 80%;
+        margin: 0 auto;        
+    }
+
 }
 
