@@ -74,7 +74,7 @@ header nav ul button {
 
 header h1 {
     font-size: 35px;
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Consolas', sans-serif;
     margin: 0;
 }
 
@@ -89,21 +89,17 @@ header h1 {
 
 
 .console-container{
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(0, 0, 0, 0.744);
     border-radius: 20px;
     width: 40%;
     margin: 30px auto;
     padding: 10px;
+    backdrop-filter: blur(5px);
 
-    box-shadow: -5px 5px 0 color-mix(in srgb, #0014ff 100%, #ff2cdf 100%);
 
 }
 
 #main-hero-print{
-    background-image: linear-gradient(750deg, #ff2cdf 0%, #0014ff);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-shadow: 5px -5px 0 white;
 }
 
 .console p{
@@ -113,7 +109,6 @@ header h1 {
 
 main {
     width: 100%;
-    
 }
 
 .back-imag img{
@@ -130,7 +125,6 @@ main {
     height: 90vh;
 
     color: white;
-    background-color: black;
 
     display: flex;
     flex-direction: column;
@@ -160,7 +154,6 @@ main {
     text-align: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(3, 3, 3);
 }
 
 .inv{
@@ -174,18 +167,18 @@ main {
     color: white;
     width: 100%;
     height: 100%;
-
     position: relative;
     top: 0;
-
-    transition: 0.5s ease-in-out;
-
-    transform: translateY(20vh);
-
+    background-color: rgb(5, 5, 5);
+    
+    
+    
 }
 
 
 .aboute-me-article {
+    transition: 0.5s ease-in-out;
+    transform: translateY(20vh);
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -260,6 +253,7 @@ main {
 
 
 .works-and-courses {
+
     background-color: black;
     color: white;
     height: 100vh;
@@ -281,7 +275,6 @@ main {
 
 .works-container article {
     margin: 0 auto;
-    padding: 50px;
     width: 50%;
 }
 
@@ -332,6 +325,9 @@ main {
     font-size: 40px;
 }
 .article-content {
+
+    border-radius: 50px;
+
 
     transition: 0.5s ease-in-out;
 
@@ -410,9 +406,9 @@ main {
 .social-media{
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5, 5, 5);
     color: white;
-    padding-top: 50px;
+    padding-top: 25px;
     font-family: 'Josefin Sans';
 }
 
@@ -507,7 +503,7 @@ main {
 
 .languagens-i-know{
     width: 100%;
-
+    background-color: black;
     padding: 30px 0 30px 0;    
 
 }
@@ -553,8 +549,50 @@ main {
 
 
 /* FOOTER */
-footer {
-    height: 40vh;
+footer{
+
+    background-color: rgb(5, 5, 5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-color: black;
+
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main-footer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-footer .title{
+    width: 100%;
+    text-align: center;
+}
+.main-footer .text-center{
+    width: 100%;
+    text-align: justify center;
+}
+.main-footer .list{
+    text-align: center;
+    width: 100%;
+}
+
+.list ul{
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
