@@ -351,6 +351,7 @@ main {
 
 
 .carrossellBTN {
+    z-index: 99;
     position: absolute;
     cursor: pointer;
 }
