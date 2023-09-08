@@ -20,9 +20,9 @@ about_me_header.addEventListener("click", ()=>{
 })
 
 projetcs.addEventListener("click", ()=>{
-    scrollTo(0,1200);
+    scrollTo(0,1500);
 })
 
 social_media.addEventListener("click", () =>{
-    scrollTo(0,1950)
+    scrollTo(0,2000)
 })
